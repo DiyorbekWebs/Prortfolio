@@ -7,7 +7,6 @@ import { MdPublic } from "react-icons/md";
 import {
   IoAirplaneSharp,
   IoMusicalNotesSharp,
-  IoMdCalculator,
 } from "react-icons/io5";
 const Interestt = styled.div`
   padding: 20px 283px 120px 283px;
@@ -82,7 +81,7 @@ const HoverText = styled.p`
   left: 25%;
   transition: 1s;
   color: #fff;
-  z-index: -1;
+  z-index: -2;
   text-align: center;
 `;
 const Item = styled.li`
@@ -118,40 +117,36 @@ export default function Interest() {
   return (
     <Interestt>
       <div className="container">
-        <Box>
-          <Tittle>My interests</Tittle>
-          <List className="red">
-            <Item className="item">
-              <FaPencilAlt />
-              <HoverText1 className="wer">Drawing</HoverText1>
-            </Item>
+          <Box>
+            <Tittle>My interests</Tittle>
+            <List className="red">
+                <Item className="item">
+                  <FaPencilAlt />
+                  <HoverText1 className="wer">Drawing</HoverText1>
+                </Item>
+                <Item className="item">
+                  <PlaneIcon />
+                  <HoverText className="wer">Travel</HoverText>
+                </Item>
 
-            <Item className="item">
-              <PlaneIcon />
-              <HoverText className="wer">Travel</HoverText>
-            </Item>
-
-            <Item className="item">
-              <IoMusicalNotesSharp />
-              <HoverText className="wer">Music</HoverText>
-            </Item>
-
-            <Item className="item">
-              <FaCoffee />
-              <HoverText className="wer">Coffe</HoverText>
-            </Item>
-
-            <Item className="item">
-              <ImCalculator />
-              <HoverText className="wer">Math</HoverText>
-            </Item>
-
-            <Item className="item">
-              <MdPublic />
-              <HoverText1 className="wer">Language</HoverText1>
-            </Item>
-          </List>
-        </Box>
+                <Item className="item">
+                  <IoMusicalNotesSharp />
+                  <HoverText className="wer">Music</HoverText>
+                </Item>
+                <Item className="item">
+                  <FaCoffee />
+                  <HoverText className="wer">Coffe</HoverText>
+                </Item>
+                <Item className="item">
+                  <ImCalculator />
+                  <HoverText className="wer">Math</HoverText>
+                </Item>
+                <Item className="item">
+                  <MdPublic />
+                  <HoverText1 className="wer">Language</HoverText1>
+                </Item>
+            </List>
+          </Box>
       </div>
     </Interestt>
   );

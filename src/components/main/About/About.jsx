@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { profile } from "../../../assets/img/img";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Fade } from "react-reveal";
-import Resume from '../../../assets/img/resume.pdf'
+import Resume from "../../../assets/img/resume.pdf";
 const AboutPage = styled.div`
   padding: 114px 0px;
   background-color: #22252c;
@@ -130,6 +130,7 @@ export const Tittle = styled.h1`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  text-transform: uppercase;
 `;
 const Paragrf = styled.p`
   font-weight: 300;

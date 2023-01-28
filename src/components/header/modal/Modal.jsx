@@ -28,7 +28,7 @@ const CloseBtn = styled(VscChromeClose)`
   &:hover {
     font-size: 45px;
     transition: 1s;
-    color: #00D7BB;
+    color: #00d7bb;
   }
 `;
 const Texts = styled.ul`
@@ -48,19 +48,29 @@ const Item = styled.li`
     color: #00d7bb;
   }
 `;
+const Ahref = styled.a`
+  color: #fff;
+`;
 export default function Modal({ close, stylee }) {
   return (
     <ModalWindow style={{ ...stylee }}>
       <CloseBtn onClick={() => close()} />
-      <Texts>
-        <Item>Home</Item>
-        <Item>About</Item>
-        <Item>Education</Item>
-        <Item>Portfolio</Item>
-        <Item>Single</Item>
-        <Item>Testimonials</Item>
-        <Item>Blog</Item>
-        <Item>Contact Me</Item>
+      <Texts onClick={() => close()}>
+        <Ahref href={"#"}>
+          <Item>Home</Item>
+        </Ahref>
+        <Ahref href={"#"}>
+          <Item>About</Item>
+        </Ahref>
+        <Ahref href={"#"}>
+          <Item>Portfolio</Item>
+        </Ahref>
+        <Ahref href={"#"}>
+          <Item>Blog</Item>
+        </Ahref>
+        <Ahref href={"#"}>
+          <Item>Contact Me</Item>
+        </Ahref>
       </Texts>
     </ModalWindow>
   );

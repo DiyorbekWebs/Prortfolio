@@ -31,35 +31,12 @@ const CloseBtn = styled(VscChromeClose)`
     color: #00d7bb;
   }
 `;
-const Texts = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-`;
-const Item = styled.li`
-  font-size: 24px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: 0.5s;
 
-  &:hover {
-    transition: 0.8s;
-    color: #00d7bb;
-  }
-`;
 const Img = styled.img`
-  width: 70%;
-  height: 70%;
+  width: 294px;
+  height: 294px;
   background-size: cover;
-  @media (max-width: 886px) {
-    width: 90%;
-    height: 50%;
-  }
-  @media (max-width: 886px) {
-    width: 90%;
-    height: 40%;
-  }
+  
 `;
 export default function Modal({ close, stylee, img }) {
   return (

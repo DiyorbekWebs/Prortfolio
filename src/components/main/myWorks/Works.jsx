@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { profile } from "../../../assets/img/img";
+import { a1, a2, a3, a4, a5, a6 } from "../../../assets/img/img";
 import { Tittle } from "../About/About";
 import Card from "./Card";
 
@@ -8,7 +8,6 @@ const Work = styled.div`
   background-color: #22252c;
 `;
 const Box1 = styled.div`
-  /* margin-bottom: 80px; */
 `;
 const Text = styled.div`
   background-color: #22252c;
@@ -16,7 +15,7 @@ const Text = styled.div`
   align-items: center;
   padding: 114px 0px 80px 0px;
 
-  @media (max-width:430px){
+  @media (max-width: 430px) {
     padding: 50px 0px 50px 0px;
   }
 `;
@@ -79,16 +78,21 @@ export default function Works() {
         <div className="container">
           <Box2>
             <Cards>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-              <Card img={profile} link={'https://ucell.uz/uz/subscribers'}/>
-
+              <Card img={a6} link={"https://cosmetika.netlify.app"} />
+              <Card
+                img={a1}
+                link={"https://diyorbekweb-colorpicer-pwa.netlify.app/"}
+              />
+              <Card
+                img={a2}
+                link={"https://diyorbek-portfolio1.netlify.app/"}
+              />
+              <Card img={a3} link={"https://diyorbek-clock-two.netlify.app/"} />
+              <Card img={a4} link={"https://diyorbek-test.netlify.app/"} />
+              <Card
+                img={a5}
+                link={"https://lively-bunny-5e1295.netlify.app/"}
+              />
             </Cards>
             <Btn>Load More</Btn>
           </Box2>

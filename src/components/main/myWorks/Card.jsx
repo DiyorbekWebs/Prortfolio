@@ -20,42 +20,13 @@ const Cart = styled.div`
     transform: translateY(0%);
     transition: 1s;
   }
-  @media (max-width: 885px) {
-    width: 345px;
-    height: 345px;
-  }
-  @media (max-width: 430px) {
-    width: 100%;
-    height: 350px;
-  }
-  /* @media (max-width: 415px) {
-    width: 384px;
-    height: 384px;
-  }
-
-  @media (max-width: 395px) {
-    width: 360px;
-    height: 360px;
-  }
-  @media (max-width: 376px) {
-    width: 345px;
-    height: 345px;
-  }
-  @media (max-width: 360px) {
-    width: 330px;
-    height: 330px;
-  }
-  @media (max-width: 321px) {
-    width: 290px;
-    height: 290px;
-  } */
 `;
 const Hover = styled.div`
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 294px;
+  height: 294px;
   background-color: #22252cb5;
   transform: translateY(200%);
   transition: 1s;
@@ -86,27 +57,33 @@ const styyle = {
   transform: "translateY(-200%)",
   transition: "1.5s",
 };
+const Img = styled.img`
+  background-size: 100%;
+  background-position: center;
+`;
+
 export default function Card({ img, link }) {
-  const { closeModal, isOpen, openModal } = useModal()
+  const { closeModal, isOpen, openModal } = useModal();
   return (
     <>
       <Cart>
-        <img src={img} alt="Portfolio Img" />
+        <Img src={img} alt="Portfolio Img" />
         <Hover className="hover">
-          <a href={link} target='_blank'>
-            <IconStyle >
+          <a href={link} target="_blank">
+            <IconStyle>
               <BsLink45Deg />
             </IconStyle>
           </a>
           <IconStyle onClick={() => openModal()}>
             <RxZoomIn />
           </IconStyle>
-
         </Hover>
       </Cart>
-      {
-        isOpen ? <Modal img={img} close={closeModal} /> : <Modal stylee={styyle} />
-      }
+      {isOpen ? (
+        <Modal img={img} close={closeModal} />
+      ) : (
+        <Modal stylee={styyle} />
+      )}
     </>
   );
 }

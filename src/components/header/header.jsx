@@ -24,16 +24,6 @@ const Nav = styled.nav`
   z-index: 1;
   color: #fff;
   transition: 1s;
-
-
-  /* margin-bottom: 10%;
-
-  @media (max-width: 885px) {
-    margin-bottom: 25%;
-  }
-  @media (max-width: 430px) {
-    margin-bottom: 20%;
-  } */
 `;
 const Icons = styled.div`
   display: flex;
@@ -142,14 +132,35 @@ export default function Header() {
     <div className="container">
       <Nav className={`${stkyNav && "navsticky"}`}>
         <div className="container">
-          <NavBox>
+          <NavBox id="home">
             <Icons>
-              <AiFillGithub style={icons} />
-              <BsTelegram style={icons} />
-              <BsInstagram style={icons} />
-              <BsTwitter style={icons} />
-              <FaFacebookF style={icons} />
-              <FaLinkedinIn style={icons} />
+              <a href="https://github.com/DiyorbekkAbdullayev" target="_blank">
+                <AiFillGithub style={icons} />
+              </a>
+              <a href="https://t.me/Storm_02031" target="_blank">
+                <BsTelegram style={icons} />
+              </a>
+              <a
+                href="https://www.instagram.com/diyorbek.webs/"
+                target={"_blank"}
+              >
+                <BsInstagram style={icons} />
+              </a>
+              <a href="https://twitter.com/storm02031" target={"_blank"}>
+                <BsTwitter style={icons} />
+              </a>
+              <a
+                href="https://www.facebook.com/Diyorbek.Webs/"
+                target={"_blank"}
+              >
+                <FaFacebookF style={icons} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/honor-9-454914257/"
+                target={"_blank"}
+              >
+                <FaLinkedinIn style={icons} />
+              </a>
             </Icons>
 
             <Hamburger
