@@ -203,11 +203,12 @@ export default function About() {
                 </Fade>
                 <Fade bottom>
                   <Paragrf>
-                    Hello! I’m Oliver Queen. Web Developer with over 8 years of
-                    experience. Experienced with all stages of the development
-                    cycle for dynamic web projects. Having an in-depth knowledge
-                    including advanced HTML5, CSS3, JavaScript, jQuery, Angular
-                    JS. Strong background in management and leadership.
+                    Hello there! My name is Diyorbek Abdullayev. I am 14 years
+                    old. I don't the experience. I know programming languages
+                    like HTML5, CSS3, JavaScript, React js. I can use my
+                    knowledge well. I know and can use styled-component,
+                    material-ui, redux toolkit, hooks in React js. My goal is to
+                    learn more and gain better experience.
                   </Paragrf>
                 </Fade>
                 <List>
